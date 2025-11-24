@@ -14,7 +14,7 @@ For now only the pages Folder is utilized
 
 pages 
  -- Approval Request 
- -- Modals(Create/ manage)
+ -- Modals(Create/ manage) - pages for now
  -- Discussion
  -- Home
  -- Manager Dashboard
