@@ -155,8 +155,11 @@
     margin-bottom: 10px;
   }
   
-  .footer p {
+  .footer a{
     font-size: 14px;
+    color:#fff;
+    display: block;
+    text-decoration: none;
     margin-bottom: 5px;
   }
   
