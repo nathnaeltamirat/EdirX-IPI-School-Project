@@ -171,7 +171,7 @@
   /* Responsive (Flexbox based) */
   @media (max-width: 768px) {
     .nav-links {
-      display: none;
+      font-size: 0.8rem;
     }
   
     .plan-card {
