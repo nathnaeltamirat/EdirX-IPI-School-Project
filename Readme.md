@@ -9,7 +9,7 @@ transforming the Edir we know in local form into a digital system involving Edir
 3. Edir Approval and Edir event page
 
 ## Folder Structure
-For now only the pages Folder is utilized
+For now only the pages and dashboard  in cssAssignment1 is created 
 ```bash
 
 pages 
@@ -19,7 +19,14 @@ pages
  -- Home
  -- Manager Dashboard
  -- Profile
+ 
 
+```
+
+```bash
+assets
+ -- images (images files)
+cssAssignment1 (html and css files)
 ```
 ### Group Members
 1. Migbaru belay ETS0976/16
