@@ -4,45 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/css/auth.css">
-    <title>Document</title>
+    <title>Login - EdirX</title>
   </head>
   <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">EdirX</div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#plan">Plan</a>
+        <a href="#team">Team</a>
+        <a href="#">Get-Started</a>
+      </nav>
+    </header>
 
-      <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">EdirX</div>
-    <nav class="nav-links">
-      <a href="#">Home</a>
-      <a href="#plan">Plan</a>
-      <a href="#team">Team</a>
-      <a href="#">Get-Started</a>
-    </nav>
-  </header>
+    <!-- Main Content -->
+    <main>
+      <form class="login-form">
+        <div class="form-title"></div>
+        
+        <label for="email">Email Address:</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email address"
+        />
 
-  
-    <form>
-      <label for="email">Email Address:</label>
-      <input
-        type="email"
-        id="email"
-        placeholder="Enter the email address"
-      /><br /><br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        />
 
-      <label for="password">Email Address:</label>
-      <input
-        type="password"
-        id="password"
-        placeholder="Enter your password "
-      /><br /><br />
+        <button type="submit">Login</button>
 
-      <button type="submit">Login</button>
+        <p class="signup-text">
+          Don't have an account?
+          <a href="signup.html">Sign Up</a>
+        </p>
+      </form>
+    </main>
 
-      <p class="signup-text">
-        Don't have an account?
-        <a href="signup.html">SignUp</a>
-      </p>
+    <!-- Footer -->
+    <footer class="footer">
+      <div>
+        <h4>Basic information</h4>
+        <a href="#">Home</a>
+        <a href="#team">Team</a>
+        <a href="#plan">Plan</a>
+        <a href="#">Join</a>
+      </div>
 
+      <div class="footer-logo">EdirX</div>
 
-    </form>
+      <div>
+        <h4>Contact us</h4>
+        <p>IP@gmail.com</p>
+        <p>+251-x-x-x-x</p>
+      </div>
+    </footer>
+
+    <div class="copyright">
+      EdirX © 2026 reserved
+    </div>
   </body>
 </html>
