@@ -104,3 +104,60 @@ body {
   color: red;
   cursor: pointer;
 }
+ /* Footer */
+  .footer {
+    background: #000;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px 20px;
+  }
+  
+  .footer-logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .footer h4 {
+    margin-bottom: 10px;
+  }
+  
+  .footer a{
+    font-size: 14px;
+    color:#fff;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+  
+  .copyright {
+    background: #000;
+    color: #aaa;
+    text-align: center;
+    padding: 10px;
+    font-size: 13px;
+  }
+  
+  /* Responsive (Flexbox based) */
+  @media (max-width: 768px) {
+    .nav-links {
+      font-size: 0.8rem;
+    }
+  
+    .plan-card {
+      width: 45%; /* 2 per row */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .plan-card {
+      width: 100%; /* 1 per row */
+    }
+  
+    .footer {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+  }

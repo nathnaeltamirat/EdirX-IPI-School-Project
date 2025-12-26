@@ -9,14 +9,12 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* ===== NAVBAR ===== */
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
+  padding: 16px 32px;
   align-items: center;
-  padding: 20px 60px;
-  background: #2f2f2f;
-  color: #fff;
 }
 
 .logo {
@@ -24,19 +22,21 @@ body {
   font-weight: bold;
 }
 
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
 .nav-links a {
-  color: #fff;
   text-decoration: none;
-  margin-left: 20px;
+  color: #0b0b0b;
 }
 
 /* ===== SEARCH BAR ===== */
-section form {
-  padding: 20px 60px;
-}
 
 section input[type="search"] {
-  width: 350px;
+  max-width: 200%;
+  min-width: 100%;
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
@@ -47,11 +47,16 @@ main {
   padding: 20px 60px;
 }
 
-main > section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+section {
+  width:80%;
+  margin:1% auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 30px;
+}
+section article{
+  margin:2% 0;
 }
 
 /* ===== CARD ===== */
@@ -154,7 +159,7 @@ figcaption {
   padding: 30px;
   border-radius: 14px;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
 .modal h2 {
@@ -244,10 +249,12 @@ figcaption {
 
 /* View more */
 .view-more {
+  margin-left: 10%;
   color: #e53935;
   font-size: 14px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-bottom: 2%;
+  margin-top: -3%;
   font-weight: bold;
 }
 
@@ -257,4 +264,54 @@ figcaption {
 
 .modal {
   max-width: 90%;
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.copyright {
+  background: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+}
+
+/* Responsive (Flexbox based) */
+@media (max-width: 768px) {
+  .nav-links {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
 }
