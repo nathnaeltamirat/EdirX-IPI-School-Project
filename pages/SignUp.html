@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/css/auth.css">
-    <title>Sign Up - EdirX</title>
+    <title>Login - EdirX</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -20,22 +20,25 @@
 
     <!-- Main Content -->
     <main>
-      <form class="signup-form">
-        <div class="form-title"></div>
-        
-        <label for="fullname">Full Name:</label>
+      <form class = "signInfForm" >
+        <div class="form-title">EdirX </br> Join the community</div>
+        <label for="full_name">Full Name:</label>
         <input
           type="text"
-          id="fullname"
+          id="full_name"
+          required
           placeholder="Enter your full name"
         />
-
         <label for="dob">Date of Birth:</label>
-        <input type="date" id="dob" />
-
+        <input
+          type="date"
+          required
+          id="dob"
+        />
         <label for="email">Email Address:</label>
         <input
           type="email"
+          required
           id="email"
           placeholder="Enter your email address"
         />
@@ -43,25 +46,36 @@
         <label for="password">Password:</label>
         <input
           type="password"
+          required
           id="password"
           placeholder="Enter your password"
         />
-
-        <label for="phone">Phone Number:</label>
+          <label for="passwordAgain">Confirm Password:</label>
         <input
-          type="tel"
-          id="phone"
-          placeholder="Enter your phone number"
+          type="password"
+          required
+          id="passwordAgain"
+          placeholder="Enter your password again"
         />
+        <label for="phone_number">Phone Number:</label>
+        <input
+          type="text"
+          required
+          id="phone_number"
+          placeholder="Entery your phone_number"
+        />
+        <label for="id_document">ID Document:</label>
+        <input
+          type="file"
+          required
+          id="id_document"/>
+        <p id="msg"></p>
 
-        <label for="file">ID Document:</label>
-        <input type="file" id="file" />
+        <button type="submit">Register</button>
 
-        <button type="submit">Sign Up</button>
-
-        <p class="signin-text">
+        <p class="signup-text">
           Already have an account?
-          <a href="login.html">Login</a>
+          <a href="SignIn.html">Sign In</a>
         </p>
       </form>
     </main>
@@ -88,5 +102,7 @@
     <div class="copyright">
       EdirX © 2026 reserved
     </div>
+    <script src = "../assets/js/register.js"></script>
+  </body>
   </body>
 </html>

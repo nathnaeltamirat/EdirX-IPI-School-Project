@@ -18,7 +18,6 @@ body {
   justify-content: space-between;
   padding: 16px 32px;
   align-items: center;
-  
 }
 
 .logo {
@@ -33,106 +32,128 @@ body {
   font-size: 14px;
 }
 
-/* ===== Center Form ===== */
-form {
-  width: 340px;
+main {
+  background-color: #000;
+  width: 40%;
+  border-radius: 12px;
+  margin: 0 auto;
+  color: #fff;
+  padding: 30px;
+  margin-bottom: 2%;
+}
+main form .form-title {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 5%;
+}
+main form label {
+  display: block;
+  margin: 1% 0;
+}
+main form input {
+  background-color: #fff;
+  padding: 7px 5px;
+  border-radius: 12px;
+  width: 100%;
+  border-radius: 12;
+}
+main form input[type="file"]{
+  width:200px;
+  background-color: #fca311;
+}
+main button {
+  width: 100%;
+  background-color: #fca311;
+  padding: 7px 5px;
+  margin: 2% 0;
+  border-radius: 12px;
+  color: #000;
+  text-align: center;
+  font-size: 1.2rem;
+}
+main button:hover {
+  cursor: pointer;
+}
+main .signup-text {
+  font-size: 0.8rem;
+  text-align: center;
+}
+main .signup-text a {
+  color: #fca311;
+  text-decoration: none;
+}
+.success{
+  color:#00ff00;
+  font-size:0.9rem;
+
+}
+.error{
+  color:#ff0000;
+  font-size: 0.9rem;
+}
+/* Footer */
+.footer {
   background: #000;
   color: #fff;
-  padding: 30px 25px;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-
-  /* center */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 20px;
 }
 
-/* ===== Form Title ===== */
-form::before {
-  content: "EDIRX \A Join - the community";
-  white-space: pre;
-  display: block;
-  text-align: center;
+.footer-logo {
+  font-size: 24px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
-/* ===== Labels ===== */
-label {
-  font-size: 13px;
-  display: block;
-  margin-bottom: 6px;
+.footer h4 {
+  margin-bottom: 10px;
 }
 
-/* ===== Inputs ===== */
-input {
-  width: 100%;
-  padding: 8px 10px;
-  border-radius: 6px;
-  border: none;
-  outline: none;
-  margin-bottom: 15px;
-  font-size: 13px;
-}
-
-/* File input */
-input[type="file"] {
-  background: #fff;
-  padding: 6px;
-}
-
-/* ===== Button ===== */
-button {
-  width: 100%;
-  background: #f5a623;
-  color: #000;
-  border: none;
-  padding: 10px;
+.footer a {
   font-size: 14px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: bold;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 5px;
 }
 
-button:hover {
-  background: #ffb84d;
+.copyright {
+  background: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
 }
 
-/* ===== Responsive ===== */
-@media (max-width: 500px) {
-  form {
-    width: 90%;
+/* Responsive (Flexbox based) */
+@media (max-width: 768px) {
+  .nav-links {
+    font-size: 0.8rem;
   }
-
+  main .form-title {
+    font-size: 0.8rem;
+  }
+  main {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  main {
+    width: 70%;
+  }
   .navbar {
     padding: 15px 20px;
   }
 }
 
-/* ===== File Upload Button Styling ===== */
-input[type="file"] {
-  background: #fff;
-  border-radius: 6px;
-  padding: 6px;
-  font-size: 13px;
+@media (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  main {
+    width: 90%;
+  }
 }
-
-/* The actual button */
-input[type="file"]::file-selector-button {
-  background: #f5a623;
-  color: #000;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-/* Hover effect */
-input[type="file"]::file-selector-button:hover {
-  background: #ffb84d;
-}
-
