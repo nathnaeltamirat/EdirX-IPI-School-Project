@@ -168,7 +168,7 @@ section input[type="search"] {
   all: unset;
   min-height: 36px;
   padding: 8px 20px;
-  background-color: #fca311;
+  background-color: #ff0000;
   border: none;
   border-radius: 8px;
   color: #fff;
@@ -181,7 +181,7 @@ section input[type="search"] {
 }
 
 .container ul li button:hover {
-  background-color: #fca311;
+  background-color: #d12b2b;
 }
 
 /* Footer */
@@ -309,7 +309,7 @@ section input[type="search"] {
   }
 
   .container ul li button {
-    min-width: 100%;
+    min-width: 90%;
     margin-top: 8px;
   }
 
