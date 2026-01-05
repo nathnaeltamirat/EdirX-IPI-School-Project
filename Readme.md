@@ -9,24 +9,37 @@ transforming the Edir we know in local form into a digital system involving Edir
 3. Edir Approval and Edir event page
 
 ## Folder Structure
-For now only the pages and dashboard  in cssAssignment1 is created 
+Project completed using local storage as a demo backend for this assignment
 ```bash
 
 pages 
- -- Approval Request 
- -- Modals(Create/ manage) - pages for now
- -- Discussion
+ -- Request 
+ -- Events
  -- Home
  -- Manager Dashboard
  -- Profile
+ -- SignIn
+ -- SignUp
+ -- index - general dashboard
+ -- Edir page - list of edirs
  
-
 ```
 
 ```bash
 assets
  -- images (images files)
-cssAssignment1 (html and css files)
+ -- css (separate css files)
+ -- js (separate js files)
+
+
+```bash
+MockUp - Todo
+
+```bash
+How to run it: locally
+clone: https://github.com/nathnaeltamirat/EdirX-IPI-School-Project.git
+open : SignIn.html on pages using live server
+```
 ```
 ### Group Members
 1. Migbaru belay ETS0976/16
@@ -34,4 +47,4 @@ cssAssignment1 (html and css files)
 3. Muhammed Ali ETS 1026/16
 4. Naod Gebeyaw ETS 1069/16
 5. Natan Asnake ETS 1081/16
-6. Nathnael Tamirat ETS 1088/16
+6. Nathnael Tamirat ETS 1088/16 - Leader

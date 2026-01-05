@@ -42,39 +42,41 @@ body {
 }
 
 /* ===== SEARCH BAR ===== */
-section:first-of-type {
-  padding: 20px 32px;
-  margin: 0 auto;
-  max-width: 1200px;
+.searchContainer {
+  display: flex;
+  width: 75%;
+  margin: 1% auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  gap: 5px;
+  padding: 5px;
 }
 
-section:first-of-type form {
-  width: 100%;
+section #search {
+  width: 30px;
 }
 
 section input[type="search"] {
-  width: 100%;
-  padding: 12px 16px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  flex-grow: 1;
+  border: none;
+  outline: none;
   font-size: 14px;
 }
 
 /* ===== GRID SECTION ===== */
-section:nth-of-type(2) {
+#container {
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex;
+  gap:15px;
+  flex-wrap: wrap;
+  margin: 1% auto;
   padding: 0 32px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  justify-content: center;
 }
 
-section:nth-of-type(2) article {
-  margin: 0;
-  width: 100%;
+#container article {
+  margin: 1% 0;
+  width: 30%;
+  min-width: 200px;
 }
 
 /* ===== CARD ===== */
@@ -121,65 +123,40 @@ figcaption {
   text-decoration: underline;
 }
 
-/* ===== FOOTER ===== */
+/*/* Footer */
 .footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 40px 32px;
   background: #000;
   color: #fff;
+  display: flex;
+  margin-top: 7%;
   flex-wrap: wrap;
-  gap: 30px;
-  margin-top: auto;
-}
-
-.footer > div {
-  flex: 1;
-  min-width: 200px;
-}
-
-.footer h4 {
-  margin-bottom: 15px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.footer a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  margin-bottom: 8px;
-  font-size: 14px;
-  opacity: 0.9;
-}
-
-.footer a:hover {
-  opacity: 1;
-}
-
-.footer p {
-  font-size: 14px;
-  margin-bottom: 8px;
-  opacity: 0.9;
+  justify-content: space-around;
+  padding: 40px 20px;
 }
 
 .footer-logo {
+  font-size: 24px;
   font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-/* ===== COPYRIGHT ===== */
-.copyright {
-  text-align: center;
-  padding: 15px;
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer a {
   font-size: 14px;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.copyright {
   background: #000;
   color: #aaa;
-  border-top: 1px solid #333;
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
 }
 
 /* ===== ADD EDIR FLOATING BUTTON ===== */
@@ -267,8 +244,21 @@ figcaption {
   margin-top: 24px;
   padding: 12px;
   width: 100%;
-  background: #f9a825;
+  background: #fca311;
   color: #000;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.cancel-btn {
+  margin-top: 24px;
+  padding: 12px;
+  width: 100%;
+  background: #ff0000;
+  color: #fff;
   font-weight: bold;
   font-size: 14px;
   border: none;
@@ -279,6 +269,16 @@ figcaption {
 
 .create-btn:hover {
   background: #fbc02d;
+}
+.success {
+  color: #00ff00;
+  text-align: left;
+  font-size: 0.8rem;
+}
+.error {
+  text-align: left;
+  color: #ff0000;
+  font-size: 0.8rem;
 }
 
 /* ===== MANAGE MODAL ===== */
@@ -328,10 +328,9 @@ figcaption {
 .btn.red:hover {
   background: #b71c1c;
 }
-
-/* Hide extra cards */
-.extra-card {
-  display: none;
+#container .not_found {
+  width: 40%;
+  margin: 2% auto;
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
@@ -341,30 +340,25 @@ figcaption {
     justify-content: center;
     text-align: center;
   }
-  
+
   .nav-links {
     gap: 15px;
     justify-content: center;
   }
-  
-  section:first-of-type,
-  section:nth-of-type(2) {
-    padding: 20px;
-  }
-  
+
   .footer {
     padding: 30px 20px;
     text-align: center;
   }
-  
+
   .footer > div {
     min-width: 100%;
   }
-  
+
   .footer-logo {
     order: -1;
   }
-  
+
   .modal {
     padding: 24px 20px;
     margin: 0 20px;
@@ -376,41 +370,34 @@ figcaption {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .logo {
     font-size: 20px;
   }
-  
+  #container {
+    justify-content: center;
+  }
   .nav-links {
     gap: 10px;
   }
-  
+
   .nav-links a {
     font-size: 13px;
   }
-  
-  section:nth-of-type(2) {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-  }
-  
-  article img {
-    height: 180px;
-  }
-  
+
   figcaption {
     padding: 12px;
     font-size: 13px;
   }
-  
+
   .btn {
     min-width: 100%;
   }
-  
+
   .manage-actions {
     flex-direction: column;
   }
-  
+
   .add-edir-btn {
     width: 50px;
     height: 50px;

@@ -9,93 +9,70 @@
     <header class="navbar">
       <div class="logo">EdirX</div>
       <nav class="nav-links">
-        <a href="#"><b>Dashboard</b></a>
-        <a href="#plan">Edir</a>
-        <a href="#team">Event</a>
-        <a href="#">Approvals</a>
-        <a href="#">Profile</a>
+        <a href="./ManagerDashboard.html"><b>Dashboard</b></a>
+        <a href="./EdirPage.html">Edir</a>
+        <a href="./event.html">Event</a>
+        <a href="./Reqeust.html">Requests</a>
+        <a href="./profile.html">Profile</a>
+        <a href="./SignIn.html">Logout</a>
       </nav>
     </header>
-    <main>
-      <section>
-        <h2>Total Members:</h2>
-        <p>82</p>
-      </section>
+    <div class="container">
+      <img src="../assets/images/invalid.png" />
+      <div class="container_active">
+        <main>
+          <section>
+            <h2>Total Members:</h2>
+            <p></p>
+          </section>
 
-      <section>
-        <h2>Number of Events:</h2>
-        <p>4</p>
-      </section>
+          <section>
+            <h2>Number of Events:</h2>
+            <p></p>
+          </section>
 
-      <section>
-        <h2>Total enrolled Edir:</h2>
-        <p>4</p>
-      </section>
-    </main>
+          <section>
+            <h2>Total Requests:</h2>
+            <p></p>
+          </section>
+        </main>
+        <h2 class="edir_name"></h2>
+        <div class="usermanagment">
+          <h2>User Management</h2>
+          <div class="container">
+            <section class="searchContainer">
+              <img
+                id="search"
+                src="../assets/images/search.png"
+                alt="search icon"
+              />
+              <input
+                type="search"
+                id="search_input"
+                name="search"
+                placeholder="Search edir"
+              />
+            </section>
 
-    <div class="usermanagment">
-      <h2>User Management</h2>
-      <div class="container">
-        <section>
-          <form>
-            <label for="search" aria-label="Search"></label>
-            <input
-              type="search"
-              id="search"
-              name="search"
-              placeholder="Search person"
-            />
-          </form>
-        </section>
-
-        <ul>
-          <li>
-            <span>Nathnael Tamirat</span>
-            <span>Manager</span>
-            <button>Delete</button>
-          </li>
-
-          <li>
-            <span>Muhammed Ali</span>
-            <span>Member</span>
-            <button>Delete</button>
-          </li>
-
-          <li>
-            <span>Mohammed Moges</span>
-            <span>Member</span>
-            <button>Delete</button>
-          </li>
-
-          <li>
-            <span>Migbaru Belay</span>
-            <span>Member</span>
-            <button>Delete</button>
-          </li>
-
-          <li>
-            <span>Naod </span>
-            <span>Member</span>
-            <button>Delete</button>
-          </li>
-
-          <li>
-            <span>Natan </span>
-            <span>Member</span>
-            <button>Delete</button>
-          </li>
-        </ul>
+            <ul>
+              <!-- <li>
+                <span>Nathnael Tamirat</span>
+                <span>Manager</span>
+                <button>Delete</button>
+              </li> -->
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
-    <!--Basic footer description-->
     <footer class="footer">
       <div>
         <h4>Basic information</h4>
-        <a href="#">Home</a>
-        <a href="#team">Team</a>
-        <a href="#plan">Plan</a>
-        <a href="#">Join</a>
+        <a href="./index.html">Home</a>
+        <a href="./index.html">Team</a>
+        <a href="./index.html#plan">Plan</a>
+        <a href="./SignIn.html">Join</a>
       </div>
 
       <div class="footer-logo">EdirX</div>
@@ -108,5 +85,7 @@
     </footer>
 
     <div class="copyright">EdirX © 2026 reserved</div>
+    <div class="top"></div>
+    <script src="../assets/js/manager.js" type="module"></script>
   </body>
 </html>

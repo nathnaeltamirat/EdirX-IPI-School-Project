@@ -1,71 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>EdirX - Events</title>
-  <link rel="stylesheet" href="../assets/css/event.css">
-</head>
-<body>
-  <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">EdirX</div>
-    <nav class="nav-links">
-      <a href="#"><b>Home</b></a>
-      <a href="#plan">Plan</a>
-      <a href="#team">Team</a>
-      <a href="#">Get-Started</a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <title>EdirX - Events</title>
+    <link rel="stylesheet" href="../assets/css/event.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+<header class="navbar">
+      <div class="logo">EdirX</div>
+      <nav class="nav-links">
+        <a href="./ManagerDashboard.html">Dashboard</a>
+        <a href="./EdirPage.html">Edir</a>
+        <a href="./event.html"><b>Event</b></a>
+        <a href="./Reqeust.html">Requests</a>
+        <a href="./profile.html">Profile</a>
+        <a href="./SignIn.html">Logout</a>
+      </nav>
+    </header>
 
-  <!-- MAIN CONTENT -->
-  <main class="container">
-    <h2>Events</h2>
+    <!-- MAIN CONTENT -->
+    <main class="container">
+      <img src="../assets/images/deactivated.png" class="none" alt="" />
+      <div class="event none">
+        <h2 class="edir_name"></h3>
+        <p class="description"></p>
+        <h3>Events</h2>
+        <div class="inner_event"></div>
 
-    <div class="event-list">
-      <div class="event-item">
-        <span>We need emergency money contribution for someone!</span>
-        <small>2 hour &nbsp; by kebde</small>
+        <!-- <a href="#" class="view-all">view all</a> -->
+
+        <!-- SEND EVENT -->
+        <div class="send-event">
+          <input type="text" placeholder="Send event" />
+          <button>➤</button>
+        </div>
       </div>
-
-      <div class="event-item">
-        <span>We need emergency money contribution for someone!</span>
-        <small>2 hour &nbsp; by kebde</small>
-      </div>
-
-      <div class="event-item">
-        <span>We need emergency money contribution for someone!</span>
-        <small>2 hour &nbsp; by kebde</small>
-      </div>
-
-      <div class="event-item">
-        <span>We need emergency money contribution for someone!</span>
-        <small>2 hour &nbsp; by kebde</small>
-      </div>
-
-      <div class="event-item">
-        <span>We need emergency money contribution for someone!</span>
-        <small>2 hour &nbsp; by kebde</small>
-      </div>
-    </div>
-
-    <a href="#" class="view-all">view all</a>
-
-    <!-- SEND EVENT -->
-    <div class="send-event">
-      <input type="text" placeholder="Send event">
-      <button>
-        ➤
-      </button>
-    </div>
-  </main>
-    <!--Basic footer description-->
-  <footer  class = "footer">
+    </main>
+   <footer  class = "footer">
     <div>
       <h4>Basic information</h4>
-      <a href = "#">Home</a>
-      <a href = "#team">Team</a>
-      <a href = "#plan">Plan</a>
-      <a href = "#">Join</a>
+      <a href = "./index.html">Home</a>
+      <a href = "./index.html">Team</a>
+      <a href = "./index.html#plan">Plan</a>
+      <a href = "./SignIn.html">Join</a>
     </div>
 
     <div class="footer-logo">EdirX</div>
@@ -80,6 +58,6 @@
   <div class="copyright">
     EdirX © 2026 reserved
   </div>
-
-</body>
+    <script src="../assets/js/event.js" type="module"></script>
+  </body>
 </html>

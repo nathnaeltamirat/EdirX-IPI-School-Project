@@ -148,7 +148,7 @@ body {
 }
 
 .save-btn:hover {
-  background: #e8910a;
+  background: #fca311;
 }
 
 .save-btn:active {
@@ -160,31 +160,19 @@ body {
   background: #000;
   color: #fff;
   display: flex;
-  justify-content: space-between;
-  padding: 40px 32px;
+  margin-top: 7%;
   flex-wrap: wrap;
-  gap: 30px;
-  margin-top: auto;
-}
-
-.footer > div {
-  flex: 1;
-  min-width: 200px;
+  justify-content: space-around;
+  padding: 40px 20px;
 }
 
 .footer-logo {
   font-size: 24px;
   font-weight: bold;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .footer h4 {
-  margin-bottom: 15px;
-  font-size: 16px;
-  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .footer a {
@@ -192,27 +180,25 @@ body {
   color: #fff;
   display: block;
   text-decoration: none;
-  margin-bottom: 8px;
-  opacity: 0.9;
-}
-
-.footer a:hover {
-  opacity: 1;
-}
-
-.footer p {
-  font-size: 14px;
-  margin-bottom: 8px;
-  opacity: 0.9;
+  margin-bottom: 5px;
 }
 
 .copyright {
   background: #000;
   color: #aaa;
   text-align: center;
-  padding: 15px;
-  font-size: 14px;
-  border-top: 1px solid #333;
+  padding: 10px;
+  font-size: 13px;
+}
+.success {
+  color: #00ff00;
+  text-align: left;
+  font-size: 0.8rem;
+}
+.error {
+  text-align: left;
+  color: #ff0000;
+  font-size: 0.8rem;
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
@@ -222,41 +208,41 @@ body {
     justify-content: center;
     text-align: center;
   }
-  
+
   .nav-links {
     gap: 20px;
     justify-content: center;
   }
-  
+
   .container {
     padding: 0 20px;
     margin: 30px auto;
   }
-  
+
   .container h2 {
     font-size: 1.6rem;
     text-align: center;
   }
-  
+
   .profile-form {
     max-width: 400px;
   }
-  
+
   .save-btn {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .footer {
     padding: 30px 20px;
     text-align: center;
   }
-  
+
   .footer > div {
     min-width: 100%;
   }
-  
+
   .footer-logo {
     order: -1;
   }
@@ -267,43 +253,43 @@ body {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .logo {
     font-size: 20px;
   }
-  
+
   .nav-links {
     gap: 15px;
   }
-  
+
   .nav-links a {
     font-size: 14px;
   }
-  
+
   .container {
     margin: 20px auto;
   }
-  
+
   .container h2 {
     font-size: 1.4rem;
     margin-bottom: 20px;
   }
-  
+
   .profile-form label {
     font-size: 14px;
   }
-  
+
   .profile-form input {
     padding: 10px 14px;
     margin-bottom: 20px;
     font-size: 14px;
   }
-  
+
   .save-btn {
     padding: 12px 24px;
     font-size: 15px;
   }
-  
+
   .file-input::file-selector-button {
     padding: 6px 12px;
     font-size: 13px;

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Card Grid Layout</title>
+    <title>Edir page</title>
     <link rel="stylesheet" href="../assets/css/edirPage.css" />
   </head>
 
@@ -11,97 +11,76 @@
     <header class="navbar">
       <div class="logo">EdirX</div>
       <nav class="nav-links">
-        <a href="#">Dashboard</a>
-        <a href="#plan"><b>Edir</b></a>
-        <a href="#team">Event</a>
-        <a href="#">Approvals</a>
-        <a href="#">Profile</a>
+        <a href="./ManagerDashboard.html">Dashboard</a>
+        <a href="./EdirPage.html"><b>Edir</b></a>
+        <a href="./event.html">Event</a>
+        <a href="./Reqeust.html">Requests</a>
+        <a href="./profile.html">Profile</a>
+        <a href="./SignIn.html">Logout</a>
       </nav>
     </header>
 
     <!-- Search Bar -->
-    <section>
-      <form>
-        <label for="search" aria-label="Search"></label>
-        <input
-          type="search"
-          id="search"
-          name="search"
-          placeholder="Search edir"
-        />
-      </form>
+    <section class="searchContainer">
+      <img id="search" src="../assets/images/search.png" alt="search icon" />
+      <input
+        type="search"
+        id="search_input"
+        name="search"
+        placeholder="Search edir"
+      />
     </section>
 
     <!-- Cards Grid -->
 
     <!-- Row 1 -->
-    <section>
-      <article>
-        <figure>
-          <img src="../assets/images/naod.JPEG" alt="Group of people" />
-          <figcaption>Mesalmiya ye wendoch edir</figcaption>
-        </figure>
-      </article>
+    <section id="container"></section>
 
-      <article>
-        <figure>
-          <img src="../assets/images/naod.JPEG" alt="Group of people" />
-          <figcaption>Mesalmiya ye wendoch edir</figcaption>
-        </figure>
-      </article>
+    <!-- <p class="view-more">View more</p> -->
 
-      <article>
-        <figure>
-          <img src="../assets/images/naod.JPEG" alt="Group of people" />
-          <figcaption>Mesalmiya ye wendoch edir</figcaption>
-        </figure>
-      </article>
+    <!-- Floating Add edir Button -->
+    <button class="add-edir-btn">+</button>
 
-      <article>
-        <figure>
-          <img src="../assets/images/naod.JPEG" alt="Group of people" />
-          <figcaption>Mesalmiya ye wendoch edir</figcaption>
-        </figure>
-      </article>
+    <!-- Create Edir Modal -->
+    <div class="modal-overlay" id="edirModal">
+      <div class="modal">
+        <h2>Take the lead by creating the Edir</h2>
 
-      <article>
-        <figure>
-          <img src="../assets/images/naod.JPEG" alt="Group of people" />
-          <figcaption>Mesalmiya ye wendoch edir</figcaption>
-        </figure>
-      </article>
+        <label>Edir Name</label>
+        <input type="text" id="edir_name" placeholder="Autosbis tera edir" />
 
-      <article>
-        <figure>
-          <img src="../assets/images/naod.JPEG" alt="Group of people" />
-          <figcaption>Mesalmiya ye wendoch edir</figcaption>
-        </figure>
-      </article>
-      <article class="extra-card">
-        <figure>
-          <img src="../assets/images/naod.JPEG" alt="Group of people" />
-          <figcaption>Mesalmiya ye wendoch edir</figcaption>
-        </figure>
-      </article>
+        <label>Edir Description</label>
+        <input
+          type="text"
+          placeholder="Edir description"
+          id="edir_description"
+        />
+        <p id="msg"></p>
+        <button class="create-btn">Create Edir</button>
+        <button class="cancel-btn">Cancel</button>
+      </div>
+    </div>
 
-      <article class="extra-card">
-        <figure>
-          <img src="n" alt="Group of people" />
-          <figcaption>Mesalmiya ye wendoch edir</figcaption>
-        </figure>
-      </article>
-    </section>
+    <!-- Manage Edir Modal -->
+    <div class="modal-overlay" id="manageModal">
+      <div class="modal manage-modal">
+        <h2>Control your choices: Manage</h2>
 
-    <p class="view-more">View more</p>
-
-    <!--Basic footer description-->
+        <div class="manage-actions">
+          <button class="btn green manage"></button>
+        </div>
+        <button class="btn red remove"></button>
+        <p id="msg1"></p>
+        <button class="cancel-btn">Cancel</button>
+      </div>
+    </div>
     <footer class="footer">
       <div>
         <h4>Basic information</h4>
-        <a href="#">Home</a>
-        <a href="#team">Team</a>
-        <a href="#plan">Plan</a>
-        <a href="#">Join</a>
+        <a href="./index.html">Home</a>
+        <a href="./index.html">Team</a>
+        <a href="./index.html#plan">Plan</a>
+        <a href="./SignIn.html">Join</a>
       </div>
 
       <div class="footer-logo">EdirX</div>
@@ -114,77 +93,6 @@
     </footer>
 
     <div class="copyright">EdirX © 2026 reserved</div>
-    <!-- Floating Add edir Button -->
-    <button class="add-edir-btn">+</button>
-
-    <!-- Create Edir Modal -->
-    <div class="modal-overlay" id="edirModal">
-      <div class="modal">
-        <h2>Take the lead by creating the Edir</h2>
-
-        <label>Edir Name</label>
-        <input type="text" placeholder="Autosbis tera edir" />
-
-        <label>Edir Description</label>
-        <input type="text" placeholder="Edir description" />
-
-        <button class="create-btn">Create Edir</button>
-      </div>
-    </div>
-
-    <script>
-      const addBtn = document.querySelector(".add-edir-btn");
-      const modal = document.getElementById("edirModal");
-
-      addBtn.addEventListener("click", () => {
-        modal.style.display = "flex";
-      });
-
-      modal.addEventListener("click", (e) => {
-        if (e.target === modal) {
-          modal.style.display = "none";
-        }
-      });
-    </script>
-    <!-- Manage Edir Modal -->
-    <div class="modal-overlay" id="manageModal">
-      <div class="modal manage-modal">
-        <h2>Control your choices: Manage</h2>
-
-        <div class="manage-actions">
-          <button class="btn green">Send Request</button>
-          <button class="btn green">Make it active</button>
-        </div>
-
-        <button class="btn red">Delete / Leave edir</button>
-      </div>
-    </div>
-
-    <script>
-      const manageModal = document.getElementById("manageModal");
-      const cards = document.querySelectorAll("article");
-
-      cards.forEach((card) => {
-        card.addEventListener("click", () => {
-          manageModal.style.display = "flex";
-        });
-      });
-
-      manageModal.addEventListener("click", (e) => {
-        if (e.target === manageModal) {
-          manageModal.style.display = "none";
-        }
-      });
-    </script>
-
-    <script>
-      const viewMore = document.querySelector(".view-more");
-      const extraCards = document.querySelectorAll(".extra-card");
-
-      viewMore.addEventListener("click", () => {
-        extraCards.forEach((card) => (card.style.display = "block"));
-        viewMore.style.display = "none";
-      });
-    </script>
+    <script type="module" src="../assets/js/edir.js"></script>
   </body>
 </html>

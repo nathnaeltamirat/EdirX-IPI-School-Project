@@ -12,12 +12,14 @@ body {
   min-height: 100vh;
 }
 
-/* ===== Navbar ===== */
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 16px 32px;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .logo {
@@ -25,10 +27,15 @@ body {
   font-weight: bold;
 }
 
+.nav-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
 .nav-links a {
-  margin-left: 25px;
   text-decoration: none;
-  color: #000;
+  color: #0b0b0b;
   font-size: 14px;
 }
 
@@ -92,10 +99,12 @@ main .signup-text a {
   font-size: 0.9rem;
 }
 /* Footer */
+
 .footer {
   background: #000;
   color: #fff;
   display: flex;
+  margin-top: 7%;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 40px 20px;
@@ -128,8 +137,15 @@ main .signup-text a {
 
 /* Responsive (Flexbox based) */
 @media (max-width: 768px) {
+ .navbar {
+    padding: 16px 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
   .nav-links {
-    font-size: 0.8rem;
+    gap: 15px;
+    justify-content: center;
   }
   main .form-title {
     font-size: 0.8rem;

@@ -79,7 +79,7 @@ main section p {
 
 /* user managment */
 .usermanagment {
-  margin: 40px auto;
+  margin: 1% auto;
   width: 100%;
   max-width: 1200px;
   background-color: #fff;
@@ -100,30 +100,33 @@ main section p {
 
 .container {
   padding: 0;
+  margin: 1% auto;
 }
 
 /* ===== SEARCH BAR ===== */
-section form {
-  padding: 16px 0;
-  border-bottom: 1px solid #E5E5E5;
-  margin-bottom: 16px;
+.searchContainer {
+  display: flex;
+  width: 35%;
+  min-width: 200px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  gap: 5px;
+  padding: 5px;
+}
+
+section #search {
+  width: 30px;
+}
+#serach:hover {
+  cursor: pointer;
 }
 
 section input[type="search"] {
-  width: 100%;
-  max-width: 300px;
-  padding: 10px 14px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-  transition: border-color 0.2s;
-}
-
-section input[type="search"]:focus {
+  flex-grow: 1;
+  border: none;
   outline: none;
-  border-color: #fca311;
+  font-size: 14px;
 }
-
 .container ul {
   list-style-type: none;
   text-decoration: none;
@@ -134,7 +137,7 @@ section input[type="search"]:focus {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid #e5e5e5;
   padding: 16px 0;
   gap: 15px;
 }
@@ -165,7 +168,7 @@ section input[type="search"]:focus {
   all: unset;
   min-height: 36px;
   padding: 8px 20px;
-  background-color: #e53935;
+  background-color: #fca311;
   border: none;
   border-radius: 8px;
   color: #fff;
@@ -178,7 +181,7 @@ section input[type="search"]:focus {
 }
 
 .container ul li button:hover {
-  background-color: #c62828;
+  background-color: #fca311;
 }
 
 /* Footer */
@@ -186,31 +189,19 @@ section input[type="search"]:focus {
   background: #000;
   color: #fff;
   display: flex;
-  justify-content: space-between;
-  padding: 40px 32px;
+  margin-top: 7%;
   flex-wrap: wrap;
-  gap: 30px;
-  margin-top: auto;
-}
-
-.footer > div {
-  flex: 1;
-  min-width: 200px;
+  justify-content: space-around;
+  padding: 40px 20px;
 }
 
 .footer-logo {
   font-size: 24px;
   font-weight: bold;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .footer h4 {
-  margin-bottom: 15px;
-  font-size: 16px;
-  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .footer a {
@@ -218,27 +209,54 @@ section input[type="search"]:focus {
   color: #fff;
   display: block;
   text-decoration: none;
-  margin-bottom: 8px;
-  opacity: 0.9;
-}
-
-.footer a:hover {
-  opacity: 1;
-}
-
-.footer p {
-  font-size: 14px;
-  margin-bottom: 8px;
-  opacity: 0.9;
+  margin-bottom: 5px;
 }
 
 .copyright {
   background: #000;
   color: #aaa;
   text-align: center;
-  padding: 15px;
-  font-size: 14px;
-  border-top: 1px solid #333;
+  padding: 10px;
+  font-size: 13px;
+}
+
+.popup {
+  position: absolute;
+  top: 2%;
+  padding: 5px 20px;
+  border-radius: 12px;
+
+  left: 35%;
+  opacity: 0.5;
+  animation: popper 2s ease-in forwards;
+}
+.green {
+  background-color: rgb(46, 197, 99);
+  color: #fff;
+}
+.red {
+  background-color: rgb(197, 16, 99);
+  color: #fff;
+}
+.container img {
+  max-width: 100%;
+}
+@keyframes popper {
+  10% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
@@ -248,97 +266,102 @@ section input[type="search"]:focus {
     justify-content: center;
     text-align: center;
   }
-  
+
   .nav-links {
     gap: 15px;
     justify-content: center;
   }
-  
+  .edir_name {
+    color: #fca311;
+    font-weight: bold;
+    margin-left: 5%;
+  }
   main {
     padding: 0 20px;
     gap: 15px;
   }
-  
+
   main section {
     min-width: 100%;
     padding: 20px;
   }
-  
+
   .usermanagment {
     padding: 20px;
     margin: 30px 20px;
     width: calc(100% - 40px);
   }
-  
+
   .container ul li {
     flex-wrap: wrap;
     gap: 10px;
   }
-  
+
   .container ul li span:first-child,
   .container ul li span:nth-child(2) {
     min-width: 100%;
   }
-  
+
   .container ul li span:nth-child(2) {
     text-align: left;
     padding: 4px 0;
     background: none;
   }
-  
+
   .container ul li button {
     min-width: 100%;
     margin-top: 8px;
   }
-  
+
   .footer {
     padding: 30px 20px;
     text-align: center;
   }
-  
+
   .footer > div {
     min-width: 100%;
   }
-  
+
   .footer-logo {
     order: -1;
   }
 }
 
 @media (max-width: 480px) {
+
   .navbar {
     flex-direction: column;
     gap: 10px;
   }
-  
+
   .logo {
     font-size: 20px;
   }
-  
+
   .nav-links {
     gap: 12px;
   }
-  
+
   .nav-links a {
     font-size: 13px;
   }
-  
+
   main {
     margin: 20px auto;
   }
-  
+
   main section h2 {
     font-size: 1rem;
   }
-  
+
   main section p {
     font-size: 1.7rem;
   }
-  
+
   .usermanagment h2 {
     font-size: 1.2rem;
   }
-  
+
   section input[type="search"] {
     max-width: 100%;
   }

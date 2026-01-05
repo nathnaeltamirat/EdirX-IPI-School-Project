@@ -1,67 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>EdirX - Profile</title>
-  <link rel="stylesheet" href="../assets/css/profile.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>EdirX - Profile</title>
+    <link rel="stylesheet" href="../assets/css/profile.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">EdirX</div>
+      <nav class="nav-links">
+        <a href="./ManagerDashboard.html">Dashboard</a>
+        <a href="./EdirPage.html">Edir</a>
+        <a href="./event.html">Event</a>
+        <a href="./Reqeust.html">Requests</a>
+        <a href="./profile.html"><b>Profile</b></a>
+        <a href="./SignIn.html">Logout</a>
+      </nav>
+    </header>
 
-   <!-- Navbar -->
-  <header class="navbar">
-    <div class="logo">EdirX</div>
-    <nav class="nav-links">
-      <a href="#"><b>Home</b></a>
-      <a href="#plan">Plan</a>
-      <a href="#team">Team</a>
-      <a href="#">Get-Started</a>
-    </nav>
-  </header>
+    <!-- PROFILE SECTION -->
+    <main class="container">
+      <h2>Profile Section:</h2>
 
-  <!-- PROFILE SECTION -->
-  <main class="container">
-    <h2>Profile Section:</h2>
+      <form class="profile-form">
+        <label>Name</label>
+        <input
+          type="text"
+          value="Nathnael Tamirat"
+          class="active-input"
+          disabled
+        />
 
-    <form class="profile-form">
+        <label>Email</label>
+        <input type="email" value="" id="email_value" />
 
-      <label>Name</label>
-      <input type="text" value="Nathnael Tamirat" class="active-input">
+        <label>Date of birth</label>
+        <input type="text" value="10/09/2005" disabled />
 
-      <label>Email</label>
-      <input type="email" value="nathnaeltamirat3@gmail.com" disabled>
+        <label>ID:</label>
+        <input type="file" class="file-input" disabled />
+        <p id="msg"></p>
+        <button type="submit" class="save-btn">Save changes</button>
+      </form>
+    </main>
+    <footer class="footer">
+      <div>
+        <h4>Basic information</h4>
+        <a href="./index.html">Home</a>
+        <a href="./index.html">Team</a>
+        <a href="./index.html#plan">Plan</a>
+        <a href="./SignIn.html">Join</a>
+      </div>
 
-      <label>Date of birth</label>
-      <input type="text" value="10/09/2005" disabled>
+      <div class="footer-logo">EdirX</div>
 
-      <label>ID:</label>
-      <input type="file" class="file-input">
+      <div>
+        <h4>Contact us</h4>
+        <p>IP@gmail.com</p>
+        <p>+251-x-x-x-x</p>
+      </div>
+    </footer>
 
-      <button type="submit" class="save-btn">Save changes</button>
-
-    </form>
-  </main>
-  <!--Basic footer description-->
-  <footer  class = "footer">
-    <div>
-      <h4>Basic information</h4>
-      <a href = "#">Home</a>
-      <a href = "#team">Team</a>
-      <a href = "#plan">Plan</a>
-      <a href = "#">Join</a>
-    </div>
-
-    <div class="footer-logo">EdirX</div>
-
-    <div>
-      <h4>Contact us</h4>
-      <p>IP@gmail.com</p>
-      <p>+251-x-x-x-x</p>
-    </div>
-  </footer>
-
-  <div class="copyright">
-    EdirX © 2026 reserved
-  </div>
-
-</body>
+    <div class="copyright">EdirX © 2026 reserved</div>
+    <script src="../assets/js/profile.js" type="module"></script>
+  </body>
 </html>
