@@ -108,8 +108,14 @@ document.addEventListener("DOMContentLoaded", () => {
       msg.innerHTML =
         "Succesfully registerd you will be redirected in 3 seconds";
       setTimeout(() => {
-        const repoName = window.location.pathname.split("/")[1]; // get repo folder
-        window.location.href = `/${repoName}/pages/SignIn.html`;
+        const isGitHub = window.location.hostname.includes("github.io");
+
+        // Build correct URL
+        const path = isGitHub
+          ? `/${window.location.pathname.split("/")[1]}/pages/SignIn.html`
+          : "./pages/SignIn.html";
+
+        window.location.href = path;
       }, 3000);
     }
   });
