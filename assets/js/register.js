@@ -108,7 +108,8 @@ document.addEventListener("DOMContentLoaded", () => {
       msg.innerHTML =
         "Succesfully registerd you will be redirected in 3 seconds";
       setTimeout(() => {
-        window.location.href = "../../pages/SignIn.html";
+        const repoName = window.location.pathname.split("/")[1]; // get repo folder
+        window.location.href = `/${repoName}/pages/SignIn.html`;
       }, 3000);
     }
   });

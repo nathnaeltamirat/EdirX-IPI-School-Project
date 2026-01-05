@@ -69,7 +69,8 @@ document.addEventListener("DOMContentLoaded", () => {
         msg.innerHTML =
           "Succesfully registerd you will be redirected in 3 seconds";
         setTimeout(() => {
-          window.location.href = "../../pages/EdirPage.html";
+          const repoName = window.location.pathname.split("/")[1];
+          window.location.href = `/${repoName}/pages/EdirPage.html`;
         }, 3000);
       } else {
         msg.classList.remove("success");
