@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #000;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 32px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 32px;
+  flex: 1;
+}
+
+.container h2 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* FORM */
+.profile-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.profile-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #333;
+}
+
+.profile-form input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  border: 2px solid #e0e0e0;
+  background: #f8f8f8;
+  font-size: 15px;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.profile-form input:focus {
+  outline: none;
+  border-color: #1e90ff;
+  background: #fff;
+}
+
+.profile-form input:disabled {
+  background-color: #f0f0f0;
+  color: #666;
+  cursor: not-allowed;
+  border-color: #ddd;
+}
+
+/* ACTIVE INPUT (NAME) */
+.active-input {
+  background: #fff;
+  border: 2px solid #1e90ff;
+}
+
+/* FILE INPUT */
+.file-input {
+  background: #f8f8f8;
+  padding: 12px;
+  border: 2px dashed #ccc;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.file-input:hover {
+  border-color: #1e90ff;
+}
+
+.file-input::file-selector-button {
+  padding: 8px 16px;
+  background: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 12px;
+}
+
+/* SAVE BUTTON */
+.save-btn {
+  margin-top: 20px;
+  padding: 14px 32px;
+  background: #f9a21b;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  display: block;
+  width: 100%;
+  max-width: 200px;
+}
+
+.save-btn:hover {
+  background: #fca311;
+}
+
+.save-btn:active {
+  transform: translateY(1px);
+}
+
+/* Footer */
+.footer {
+  background: #000;
+  color: #fff;
+  display: flex;
+  margin-top: 7%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  font-size: 14px;
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.copyright {
+  background: #000;
+  color: #aaa;
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+}
+.success {
+  color: #00ff00;
+  text-align: left;
+  font-size: 0.8rem;
+}
+.error {
+  text-align: left;
+  color: #ff0000;
+  font-size: 0.8rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav-links {
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .container {
+    padding: 0 20px;
+    margin: 30px auto;
+  }
+
+  .container h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .profile-form {
+    max-width: 400px;
+  }
+
+  .save-btn {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .footer > div {
+    min-width: 100%;
+  }
+
+  .footer-logo {
+    order: -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .container {
+    margin: 20px auto;
+  }
+
+  .container h2 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .profile-form label {
+    font-size: 14px;
+  }
+
+  .profile-form input {
+    padding: 10px 14px;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .save-btn {
+    padding: 12px 24px;
+    font-size: 15px;
+  }
+
+  .file-input::file-selector-button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}

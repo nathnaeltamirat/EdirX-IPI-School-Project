@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/auth.css">
+    <title>Login - EdirX</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">EdirX</div>
+      <nav class="nav-links">
+        <a href="./index.html">Home</a>
+        <a href="./index.html#plan">Plan</a>
+        <a href="./index.html#team">Team</a>
+        <a href="./SignIn.html">Get-Started</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <form class = "signInfForm" >
+        <div class="form-title">EdirX </br> Join the community</div>
+        <label for="full_name">Full Name:</label>
+        <input
+          type="text"
+          id="full_name"
+          required
+          placeholder="Enter your full name"
+        />
+        <label for="dob">Date of Birth:</label>
+        <input
+          type="date"
+          required
+          id="dob"
+        />
+        <label for="email">Email Address:</label>
+        <input
+          type="email"
+          required
+          id="email"
+          placeholder="Enter your email address"
+        />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          required
+          id="password"
+          placeholder="Enter your password"
+        />
+          <label for="passwordAgain">Confirm Password:</label>
+        <input
+          type="password"
+          required
+          id="passwordAgain"
+          placeholder="Enter your password again"
+        />
+        <label for="phone_number">Phone Number:</label>
+        <input
+          type="text"
+          required
+          id="phone_number"
+          placeholder="Entery your phone_number"
+        />
+        <label for="id_document">ID Document:</label>
+        <input
+          type="file"
+          required
+          id="id_document"/>
+        <p id="msg"></p>
+
+        <button type="submit">Register</button>
+
+        <p class="signup-text">
+          Already have an account?
+          <a href="./SignIn.html">Sign In</a>
+        </p>
+      </form>
+    </main>
+
+    <!-- Footer -->
+  <footer  class = "footer">
+    <div>
+      <h4>Basic information</h4>
+      <a href = "./index.html">Home</a>
+      <a href = "./index.html">Team</a>
+      <a href = "./index.html#plan">Plan</a>
+      <a href = "./SignIn.html">Join</a>
+    </div>
+
+    <div class="footer-logo">EdirX</div>
+
+    <div>
+      <h4>Contact us</h4>
+      <p>IP@gmail.com</p>
+      <p>+251-x-x-x-x</p>
+    </div>
+  </footer>
+
+  <div class="copyright">
+    EdirX © 2026 reserved
+  </div>
+    <script src = "../assets/js/register.js"></script>
+  </body>
+  </body>
+</html>
