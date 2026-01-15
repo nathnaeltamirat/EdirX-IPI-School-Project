@@ -31,9 +31,19 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("edir", JSON.stringify(new_edir));
   };
   const updateUser = (new_email) => {
+    let local_db = localStorage.getItem("local_db");
+    local_db = JSON.parse(local_db);
+    console.log(local_db);
+    for (let i = 0; i < local_db.length; i++) {
+      if (local_db[i].email == user.email) {
+        local_db[i].email = new_email;
+      }
+    }
+    console.log(local_db);
     let new_user = user;
     new_user.email = new_email;
     localStorage.setItem("User", JSON.stringify(new_user));
+    localStorage.setItem("local_db", JSON.stringify(local_db));
   };
   const updateEmail = (email) => {
     let prevEmail = user.email;
@@ -66,7 +76,6 @@ document.addEventListener("DOMContentLoaded", () => {
       msg.innerText = "email changed successfully";
       msg.classList.remove("error");
       msg.classList.add("success");
-      email_value.value = value;
     }
   };
   form.addEventListener("submit", (e) => {
