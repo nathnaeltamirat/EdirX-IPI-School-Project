@@ -31,7 +31,7 @@ assets
 ```bash
 How to run it: locally
 clone: https://github.com/nathnaeltamirat/EdirX-IPI-School-Project.git
-open : SignIn.html on pages using live server
+open : index.html on pages using live server
 ```
 ```
 ### Group Members
