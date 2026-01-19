@@ -3,10 +3,7 @@ The project is about a Local Edir Management System. Since social life is
 weakening due to digitalization and globalization, this project solves the problem by
 transforming the Edir we know in local form into a digital system involving Edir
 
-## What achived in html page
-1. Create modals(pages for now) to create Edir, manage edir
-2. Create Signup and signin page
-3. Edir Approval and Edir event page
+
 
 ## Folder Structure
 Project completed using local storage as a demo backend for this assignment
