@@ -2,7 +2,7 @@ const date = new Date();
 export let edir = [
   {
     owner: "nathnaeltamirat4@gmail.com",
-    name: "Mesalmiya y wendoch edir",
+    name: "Mesalmiya edir",
     description: "Demo edir description",
     events: [
       {
@@ -16,7 +16,7 @@ export let edir = [
         email: "nathnaeltamirat4@gmail.com",
       },
     ],
-    meambers: ["nathnaeltamirat4@gmail.com", "nathnaeltamirat3@gmail.com"],
+    meambers: ["x@gmail.com", ],
     requests: [{ email: "test1@gmail.com", timestamp: date }],
   },
 ];

@@ -15,12 +15,11 @@ Project completed using local storage as a demo backend for this assignment
 pages 
  -- Request 
  -- Events
- -- Home
+ -- index - General Dashboard
  -- Manager Dashboard
  -- Profile
  -- SignIn
  -- SignUp
- -- index - general dashboard
  -- Edir page - list of edirs
  
 ```
@@ -31,9 +30,6 @@ assets
  -- css (separate css files)
  -- js (separate js files)
 
-
-```bash
-MockUp - Todo
 
 ```bash
 How to run it: locally
